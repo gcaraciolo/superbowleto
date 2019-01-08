@@ -1,10 +1,6 @@
-const pg = require('pg')
- 
-const client = new pg.Client({
-  user: 'dbuser',
-  host: 'database.server.com',
-  database: 'mydb',
-  password: 'secretpassword',
-  port: 3211,
-})
-client.connect()
+DirContext ctx = new InitialDirContext();
+// ...
+ctx.search(query, filter,
+        new SearchControls(scope, countLimit, timeLimit, attributes,
+            true, // Noncompliant; allows deserialization
+            deref));
