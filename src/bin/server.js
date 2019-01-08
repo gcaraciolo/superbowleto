@@ -2,6 +2,9 @@ const instrumentation = require('../lib/instrumentation')
 
 instrumentation.initialize()
 
+const password = '1234opensource'
+console.log('password', password)
+
 const { DatabaseError } = require('../lib/errors')
 const database = require('../database')
 const { ensureDatabaseIsConnected } = require('../functions/database')
