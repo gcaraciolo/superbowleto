@@ -8,4 +8,6 @@ try {
         "user=" + uname + "&password=" + password); // Noncompliant
 
   java.net.PasswordAuthentication pa = new java.net.PasswordAuthentication("userName", "1234".toCharArray());  // Noncompliant
+} catch (Exception e) {
 
+}
